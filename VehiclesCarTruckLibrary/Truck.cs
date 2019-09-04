@@ -9,8 +9,12 @@ namespace VehiclesCarTruckLibrary {
         public bool Diesel { get; set; } = true;
         public string Bedside { get; set; }
 
+
+        // return $"{this.GetType().Name}:: Name: {EmployeeName}, Job: {JobTitle}, Salary: {Salary.ToString("C")}";
         public new string Print() {
-            return base.Print() + $"{Cap} {Diesel} {Bedside}";
+            var cap = Cap ? "Cap" : "";
+            var diesel = Diesel ? "Diesel" : "";
+            return base.Print() + $"{cap} {diesel} {Bedside}";
         }
 
         public Truck (string vin, string make, string model, string trim, decimal price, bool cap, bool diesel, string bedside) 
