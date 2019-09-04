@@ -10,7 +10,6 @@ namespace VehiclesCarTruckLibrary {
         public string Bedside { get; set; }
 
 
-        // return $"{this.GetType().Name}:: Name: {EmployeeName}, Job: {JobTitle}, Salary: {Salary.ToString("C")}";
         public new string Print() {
             var cap = Cap ? "Cap" : "";
             var diesel = Diesel ? "Diesel" : "";

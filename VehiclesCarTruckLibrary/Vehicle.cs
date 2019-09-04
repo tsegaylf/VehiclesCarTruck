@@ -13,8 +13,8 @@ namespace VehiclesCarTruckLibrary {
 
 
         //  Salary: {Salary.ToString("C")}";
-        public virtual string Print() { //didn't change to virtual
-            return $"Vin: {Vin,-8} {Make} {Model} {Trim} {Price}";
+        public virtual string Print() { 
+            return $"Vin: {Vin,-8} {Make} {Model} {Trim} {Price.ToString("C")}";
         } 
 
         public Vehicle (string vin, string make, string model, string trim, decimal price) {
